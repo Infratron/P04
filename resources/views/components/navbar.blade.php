@@ -12,7 +12,7 @@
           <a class="nav-link" aria-current="page" href="{{route('chi.siamo')}}">Chi siamo</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Servizi</a>
+          <a class="nav-link" href="{{route('Contattaci')}}">Contattaci</a>
         </li>
       </ul>
       <form class="d-flex" role="search">

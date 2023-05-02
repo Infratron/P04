@@ -3,7 +3,6 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PublicController;
 use App\Http\Controllers\ChisiamoController;
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,6 +15,8 @@ use App\Http\Controllers\ChisiamoController;
 */
 
 Route::get('/', [PublicController::class, 'Homepage'])->name('Homepage');
+Route::get('contattaci-form', [PublicController::class, 'Contattaci'])->name('Contattaci');
+Route::post('/Contattaci/submit', [PublicController::class, 'Contattacci_submit'])->name('Contattaci.submit');
 
 Route::get('/chi-siamo', [ChisiamoController::class, 'index'])->name('chi.siamo');
 
