@@ -5,6 +5,7 @@
     @if (session('emailSent'))
     <div class="alert alert-success text-center">
       {{ session('status')}}
+      <p>hai correttamente inviato la mail<p>
     </div>
     @endif
   </x-header>

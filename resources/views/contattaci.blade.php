@@ -9,7 +9,7 @@
             <form method="POST" action="{{route('Contattaci.submit')}}" class="p-5 shadow">
 
                 @if(session('emailError'))
-                <div clas="alert alert-danger">
+                <div class="alert alert-danger">
                     {{ session('emailError')}}
                 </div>
                 @endif
@@ -23,7 +23,7 @@
 
                 <div class="mb-3">
                     <label for="email" class="form-label">Indirizzo e-mail</label>
-                    <input type="email" name="name" class="form-control" id="email">
+                    <input type="email" name="email" class="form-control" id="email">
                 </div>
 
                 <div class="mb-3">
